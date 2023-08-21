@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🌈 Plasma Stick Simple Web Control</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td colspan="2"><h1>🌈 Plasma Stick Simple Web Control</h1></td>
+            </tr>
+            <tr>
+                <td><h3>Current animation: {currentAnimation}</h3></td>
+                <td><h3>Startup/default animation: {startupAnimation}</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="" method="post">
+                        <label for="newCurrentAnimation">Choose a new animation:</label>
+                        <select id="newCurrentAnimation" name="newCurrentAnimation">
+                            <option disabled selected>Choose one...</option>
+                            <option value="1">alpha.py</option>
+                            <option value="2">beta.py</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </td>
+                <td>
+                    <form action="" method="post">
+                        <label for="newStartupAnimation">Choose a new startup animation:</label>
+                        <select id="newStartupAnimation" name="newStartupAnimation">
+                            <option disabled selected>Choose one...</option>
+                            <option value="1">alpha.py</option>
+                            <option value="2">beta.py</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer-row"><a href="https://github.com/tti0/psswc">psswc</a> by <a href="https://tti0.net/">tti0</a></td>
+            </tr>
+        </table>
+    </body>
+
+</html>
