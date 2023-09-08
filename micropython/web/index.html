@@ -9,16 +9,12 @@
     </head>
 
     <body>
-        <table>
-            <tr>
-                <td colspan="2"><h1>🌈 Plasma Stick Simple Web Control</h1></td>
-            </tr>
-            <tr>
-                <td><h3>Current animation: {currentAnimation}</h3></td>
-                <td><h3>Startup/default animation: {startupAnimation}</h3></td>
-            </tr>
-            <tr>
-                <td>
+        <div class="container">
+            <h1>🌈 Plasma Stick Simple Web Control</h1>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Current animation: {currentAnimation}</h3>
                     <form action="" method="post">
                         <label for="newCurrentAnimation">Choose a new animation:</label>
                         <select id="newCurrentAnimation" name="newCurrentAnimation">
@@ -28,8 +24,9 @@
                         </select>
                         <input type="submit" value="Submit">
                     </form>
-                </td>
-                <td>
+                </div>
+                <div class="flex-item">
+                    <h3>Startup/default animation: {startupAnimation}</h3>
                     <form action="" method="post">
                         <label for="newStartupAnimation">Choose a new startup animation:</label>
                         <select id="newStartupAnimation" name="newStartupAnimation">
@@ -39,12 +36,11 @@
                         </select>
                         <input type="submit" value="Submit">
                     </form>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="footer-row"><a href="https://github.com/tti0/psswc">psswc</a> by <a href="https://tti0.net/">tti0</a></td>
-            </tr>
-        </table>
+                </div>
+            </div>
+
+            <div class="footer-row"><a href="https://github.com/tti0/psswc">psswc</a> by <a href="https://tti0.net/">tti0</a></div>
+        </div>
     </body>
 
 </html>

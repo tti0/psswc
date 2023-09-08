@@ -2,9 +2,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.flex-item {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 a:link {
@@ -23,7 +40,7 @@ a:hover {
 }
 
 .footer-row {
-    padding-top: 15px;
+    margin-top: 35px;
     font-style: italic;
     font-size: small;
     text-align: right;
