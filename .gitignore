@@ -1,3 +1,5 @@
 .micropico
 .vscode/
 micropython/WIFI_CONFIG.py
+*.uf2
+startupAnimation.txt

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🌈 Plasma Stick Simple Web Control</title>
+        <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+        .flex-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .error-box {
+            background-color: lightpink;
+            color: maroon;
+            border-radius: 10px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #1e31bf;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #1e31bf;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #1e81bf;
+        }
+
+        .footer-row {
+            margin-top: 35px;
+            font-style: italic;
+            font-size: small;
+            text-align: right;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>🌈 Plasma Stick Simple Web Control</h1>
+
+            <div class="flex-container">
+                <div class="flex-item error-box" style="display: none;">
+                    <p><strong>Error:</strong> {{errorText}}</p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Animation: {{startupAnimation}}</h3>
+                    <form action="/changeStartupAnimation" method="post">
+                        <label for="newStartupAnimation">Choose a new animation:</label>
+                        <select id="newStartupAnimation" name="newStartupAnimation">
+                            <option disabled selected>Choose one...</option>
+                            {{startupAnimationChoices}}
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-row"><a href="https://github.com/tti0/psswc">psswc</a> by <a href="https://tti0.net/">tti0</a></div>
+        </div>
+    </body>
+
+</html>
